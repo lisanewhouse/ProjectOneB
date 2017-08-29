@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Water Spot</title>
+
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+	
+	
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6lef6dADfp6O-0nNPZMR4x-VoD2GjHIY&libraries=places"></script> -->
+
+
+
+	<!-- Style.css -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body>
+
+<h3>Maps</h3>
+
+	<!-- will display top 5 local spots -->
+	<div id="local-favorites">
+	<button class="btn btn-default" id="top1">First</button>
+	<button class="btn btn-default" id="top2">Second</button>
+	<button class="btn btn-default" id="top3">Third</button>
+	<button class="btn btn-default" id="top4">Fourth</button>
+	<button class="btn btn-default" id="top5">Fifth</button>
+	</div>
+	<!-- search field -->
+	<div id="user-search"></div>
+
+	<!-- dispays map -->
+    <div id="map"></div>
+
+    <!-- weather info -->
+    <div class="city"></div>
+  <div class="wind"></div>
+  <div class="humidity"></div>
+  <div class="temp"></div>
+  <div class="sunset"></div>
+  <div class="latt"></div>
+  <div class="long"></div>
+
+  	<!-- google maps api -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAECOd2n_nBS8HC4lP7cAOwzD82pkXKjk&callback=initMap"></script>
+
+	
+	<script src="javascript/app.js"></script>
+ 	
+	
+</body>
+</html>
